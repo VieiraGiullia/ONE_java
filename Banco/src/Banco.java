@@ -9,15 +9,15 @@ public class Banco {
         double saldo = 0;
         
         System.out.println("***********************************");
-        System.out.println("Nome do cliente: \n" + nome);
-        System.out.println("Tipo da conta: \n" + tipoConta);
-        System.out.println("Saldo atual da conta: \n" + saldo);
-        System.out.println("***********************************\n");
+        System.out.println("\nNome do cliente: " + nome);
+        System.out.println("Tipo da conta: " + tipoConta);
+        System.out.println("Saldo atual da conta: " + saldo);
+        System.out.println("\n***********************************\n");
 
         String menu;
 
         menu = """
-               ***********************************
+               \n***********************************
                Digite uma opção:
                
                1 - consultar saldo  
@@ -33,16 +33,16 @@ public class Banco {
         while (opcao != 4) {
             switch (opcao) {
                 case 1:
-                    System.out.println("Saldo atual da conta: " + saldo);
+                    System.out.println("\nSaldo atual da conta: " + saldo);
                     break;
                 case 2:
-                    System.out.println("Digite o valor do depósito: ");
+                    System.out.println("\nDigite o valor do depósito: ");
                     double deposito = sc.nextDouble();
                     saldo += deposito;
                     System.out.println("Depósito realizado com sucesso!");
                     break;
                 case 3:
-                    System.out.println("Digite o valor da transferência: ");
+                    System.out.println("\nDigite o valor da transferência: ");
                     double transferencia = sc.nextDouble();
                     if (saldo >= transferencia) {
                         saldo -= transferencia;
