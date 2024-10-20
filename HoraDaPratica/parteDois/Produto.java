@@ -16,13 +16,13 @@ public class Produto {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public int getPreco() {
+    public double getPreco() {
         return preco;
     }
-    public void setPreco(int preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
-    public int getDesconto() {
+    public double getDesconto() {
         return desconto;
     }
 
