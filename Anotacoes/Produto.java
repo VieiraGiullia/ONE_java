@@ -1,3 +1,5 @@
+package Anotacoes;
+
 public class Produto {
 
     String nome;

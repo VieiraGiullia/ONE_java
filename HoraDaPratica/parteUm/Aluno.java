@@ -1,4 +1,4 @@
-package ONE_java.HoraDaPratica;
+package HoraDaPratica.parteUm;
 
 public class Aluno {
     String nome;
