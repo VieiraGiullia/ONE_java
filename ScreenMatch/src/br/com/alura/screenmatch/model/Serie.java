@@ -31,4 +31,8 @@ public class Serie extends Titulo {
         this.minutosPorTemporada = minutosPorTemporada;
     }
 
+    @Override
+    public int getDuracaoMinutos() {
+        return temporadas * episodiosTemporada * minutosPorTemporada;
+    }
 }
