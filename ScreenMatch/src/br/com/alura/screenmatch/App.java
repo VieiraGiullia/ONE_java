@@ -1,4 +1,5 @@
 import calculo.CalculadoraDeTempo;
+import calculo.FiltroRecomendacao;
 import model.*;
 
 public class App {
@@ -34,9 +35,18 @@ public class App {
         deleFilme.setDuracaoMinutos(147);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
-        calculadora.inclui(meuFilme);
-        calculadora.inclui(deleFilme);
-        calculadora.inclui(winx);
+        //calculadora.inclui(meuFilme);
+        //calculadora.inclui(deleFilme);
+        //calculadora.inclui(winx);
         System.out.println("Tempo para maratonar winx + dois fimes de VF: " + calculadora.getTempoTotal());
+        
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNum(1);
+        episodio.setSerie(winx);
+        episodio.setTotalVisualizacoes(300);
+        filtro.filtra(episodio);
     }
 }

@@ -1,6 +1,8 @@
 package calculo;
 
 import model.Titulo;
+import model.Serie;
+import model.Filme;
 
 public class CalculadoraDeTempo {
     private int tempoTotal;
