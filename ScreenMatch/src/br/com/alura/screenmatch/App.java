@@ -6,9 +6,7 @@ import model.*;
 
 public class App {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme(); // tipo referencia
-        meuFilme.setNome("Velozes e Furiosos: Desafio em Tóquio");
-        meuFilme.setAnoDeLancamento(2006);
+        Filme meuFilme = new Filme("Velozes e Furiosos: Desafio em Tóquio", 2006); // tipo referencia
         meuFilme.setDuracaoMinutos(104);
         meuFilme.setIncluidoPlano(true);
 
@@ -22,20 +20,15 @@ public class App {
         System.out.printf("Média das avaliações do filme: " + meuFilme.mediaDasAvaliacoes());
         
         // teste com a classe Serie
-        Serie winx = new Serie();
-        winx.setNome("Winx Club");
-        winx.setAnoDeLancamento(2004);
+        Serie winx = new Serie("Winx Club", 2004);
         winx.exibeFichaTecnica();
         winx.setTemporadas(8);
         winx.setEpisodiosTemporada(24);
         winx.setMinutosPorTemporada(24);
         System.out.println("Tempo para maratonar Winx: " + winx.getDuracaoMinutos());
     
-        Filme deleFilme = new Filme(); // tipo referencia
-        deleFilme.setNome(" + Velozes + Furiosos");
-        deleFilme.setAnoDeLancamento(2003);
+        Filme deleFilme = new Filme(" + Velozes + Furiosos", 2003); // tipo referencia
         deleFilme.setDuracaoMinutos(147);
-
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         //calculadora.inclui(meuFilme);
         //calculadora.inclui(deleFilme);
@@ -52,10 +45,9 @@ public class App {
         filtro.filtra(episodio);
 
 
-        var filmedaGiovanna = new Filme();
-        filmedaGiovanna.setNome("Moana");
+        var filmedaGiovanna = new Filme("Moana", 2017);
+        //filmedaGiovanna.setNome("Moana");
         filmedaGiovanna.setDuracaoMinutos(180);
-        filmedaGiovanna.setAnoDeLancamento(2017);
         filmedaGiovanna.avalia(9);
 
         ArrayList<Filme> listaDeFilme = new ArrayList<>();
