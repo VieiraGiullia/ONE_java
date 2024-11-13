@@ -51,6 +51,7 @@ public class App {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
+
         var filmedaGiovanna = new Filme();
         filmedaGiovanna.setNome("Moana");
         filmedaGiovanna.setDuracaoMinutos(180);
@@ -63,5 +64,6 @@ public class App {
         listaDeFilme.add(meuFilme);
         System.out.println("Tamanho da lista: " + listaDeFilme.size());
         System.out.println("Primeiro filme: " + listaDeFilme.get(0).getNome());
+        
     }
 }
