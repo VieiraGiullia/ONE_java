@@ -64,6 +64,8 @@ public class App {
         listaDeFilme.add(meuFilme);
         System.out.println("Tamanho da lista: " + listaDeFilme.size());
         System.out.println("Primeiro filme: " + listaDeFilme.get(0).getNome());
-        
+        System.out.println("toString do primeiro filme - " + listaDeFilme.get(0).toString());
+
+
     }
 }
