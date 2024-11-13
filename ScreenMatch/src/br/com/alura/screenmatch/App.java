@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import calculo.CalculadoraDeTempo;
 import calculo.FiltroRecomendacao;
 import model.*;
@@ -48,5 +50,18 @@ public class App {
         episodio.setSerie(winx);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
+
+        var filmedaGiovanna = new Filme();
+        filmedaGiovanna.setNome("Moana");
+        filmedaGiovanna.setDuracaoMinutos(180);
+        filmedaGiovanna.setAnoDeLancamento(2017);
+        filmedaGiovanna.avalia(9);
+
+        ArrayList<Filme> listaDeFilme = new ArrayList<>();
+        listaDeFilme.add(filmedaGiovanna);
+        listaDeFilme.add(deleFilme);
+        listaDeFilme.add(meuFilme);
+        System.out.println("Tamanho da lista: " + listaDeFilme.size());
+        System.out.println("Primeiro filme: " + listaDeFilme.get(0).getNome());
     }
 }
