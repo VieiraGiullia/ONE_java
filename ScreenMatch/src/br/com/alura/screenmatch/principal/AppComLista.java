@@ -1,6 +1,8 @@
 package principal;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import model.Filme;
 import model.Serie;
@@ -22,7 +24,7 @@ public class AppComLista {
          * objeto só é criado com 'new'
          * VF - é usada para chegar até um objeto. ou seja, o que muda é a forma que eu me referencia a ele
          */
-        
+
         //parametrizar uma lista
         ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(filmedaGiovanna);
@@ -53,5 +55,30 @@ public class AppComLista {
          * nomes.forEach(System.out::println);
          */
 
+         ArrayList<String> buscaPorArtista = new ArrayList();
+        buscaPorArtista.add("Adam Sandler");
+        buscaPorArtista.add("Jennifer Aniston");
+        buscaPorArtista.add("Johnny Depp");
+        buscaPorArtista.add("Winona Ryder");
+        buscaPorArtista.add("Jennifer Garner");
+        buscaPorArtista.add("Mark Rufallo");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("Depois da ordenação");
+        System.out.println(buscaPorArtista);
+
+        System.out.println("Lista de títulos ordenados");
+        Collections.sort(lista);
+        System.out.println(lista);
+
+        /*
+         * Além da interface Comparable, o Java possui uma outra interface chamada Comparator, que nos fornece outra alternativa para ordenação de coleções.
+         */
+
+         // comparar por ano - sem excluir o comparable já existente
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Ordenando por ano");
+        System.out.println(lista);
     }
 }

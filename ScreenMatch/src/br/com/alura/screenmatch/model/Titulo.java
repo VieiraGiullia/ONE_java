@@ -1,6 +1,6 @@
 package model;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
      // atributos da classe
      private String nome;
      private int anoDeLancamento;
@@ -65,4 +65,11 @@ public class Titulo {
      public double mediaDasAvaliacoes(){
          return avaliacao / totalDeAvaliacoes;
      }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        // TODO Auto-generated method stub
+        // throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+        return this.getNome().compareTo(outroTitulo.getNome());
+    }
 }
