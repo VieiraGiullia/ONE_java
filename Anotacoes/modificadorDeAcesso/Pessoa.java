@@ -1,4 +1,4 @@
-package Anotacoes;
+package modificadorDeAcesso;
 
 // Uma classe é uma estrutura que define um tipo de objeto
 // define quais são as características (atributos) e comportamentos (métodos)

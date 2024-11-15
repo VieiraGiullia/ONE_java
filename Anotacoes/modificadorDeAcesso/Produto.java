@@ -1,4 +1,4 @@
-package Anotacoes;
+package modificadorDeAcesso;
 
 public class Produto {
 

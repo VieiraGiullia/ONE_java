@@ -1,4 +1,4 @@
-package Anotacoes.heranca;
+package heranca;
 
 public class ContaPoupanca extends Conta {
 

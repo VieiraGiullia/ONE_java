@@ -1,4 +1,4 @@
-package Anotacoes.arrays;
+package arrays;
 
 public class note {
     // são estruturas de dados que permitem armazenar uma coleção de elementos do mesmo tipo, são muito utilizados para manipulação de dados

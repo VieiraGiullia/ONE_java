@@ -1,4 +1,4 @@
-package Anotacoes.construtor;
+package construtor;
 
 public class Aluno extends Pessoa {
 

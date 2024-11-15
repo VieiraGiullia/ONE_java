@@ -6,7 +6,7 @@ public class Titulo {
      private int anoDeLancamento;
      private boolean incluidoPlano;
      private double avaliacao;
-     private double totalDeAvaliacoes;
+     private int totalDeAvaliacoes;
      private int duracaoMinutos;
     
     // construtor
@@ -31,7 +31,7 @@ public class Titulo {
         return duracaoMinutos;
     }
 
-    public double getTotalDeAvaliacoes() {
+    public int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
     }
 
