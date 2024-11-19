@@ -31,5 +31,5 @@ public class Musica extends Audio {
         } else {
             return 8;
         }
-    }
+    } 
 }

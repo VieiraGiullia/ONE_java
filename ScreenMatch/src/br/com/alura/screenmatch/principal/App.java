@@ -30,7 +30,7 @@ public class App {
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         //calculadora.inclui(meuFilme);
         //calculadora.inclui(deleFilme);
-        //calculadora.inclui(winx);
+        //calculadora.inclui(winx); 
         System.out.println("Tempo para maratonar winx + dois fimes de VF: " + calculadora.getTempoTotal());
         
         FiltroRecomendacao filtro = new FiltroRecomendacao();
@@ -41,7 +41,7 @@ public class App {
         episodio.setSerie(winx);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
-
+        
 
         //filmedaGiovanna.setNome("Moana");
         filmedaGiovanna.setDuracaoMinutos(180);
